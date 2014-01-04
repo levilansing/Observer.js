@@ -4,7 +4,7 @@ A simple and effective event observer plugin for jQuery.
 
 Usage:
 
-```
+```javascript
 $.observer.listenForEvents(this, {
 	eventName: function(arg1, arg2, ...) {
 		// handle a named event
@@ -57,7 +57,7 @@ jQuery based events are automatically named by the element's attributes:
 
 Example:
 
-```
+```html
 <a href="#example" id="link1">Link 1</a>
 <a href="http://github.com/" id="link2">Link 2</a>
 <select name="example3" id="uniqueId_1"> ... </select>
@@ -73,7 +73,7 @@ Example:
 ## Overriding the defaults
 To disable the automatic live registration of common form elements and links, change the configuration before the document is ready:
 
-```
+```javascript
 $.observer.configuration.liveSelectors = [];
 ```
 Then you can register your own live or non-live selectors as desired.
@@ -81,7 +81,7 @@ Then you can register your own live or non-live selectors as desired.
 ## Stop Listening
 Event listeners are registered with a target and an event name. To stop listening for events, use the following:
 
-```
+```javascript
 // Unregister the current context/object for a specific event
 $.observer.stopListeningForEvent(this, 'eventName');
 
