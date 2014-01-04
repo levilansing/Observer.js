@@ -8,7 +8,7 @@ Usage:
 $.observer.listenForEvents(this, {
 	eventName: function(arg1, arg2, ...) {
 		// handle a named event
-		// return false from any listener to stop other others from receiving the event
+		// return true from any listener to stop other others from receiving the event
 	},
 	onSomeHREFClick: function(event, element) { 
 		// handle the click event for a <a href="#someHREF"></a>
