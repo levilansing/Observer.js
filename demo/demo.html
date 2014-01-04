@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="observer.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<h3 style="float:right;">Last Event Received: <span id="info"></span></h3>
+<h1>Observer.js Demo</h1>
+
+<div>
+	<label for="demo">Select Demo: </label>
+	<select id="demo">
+		<option value="1">Links, Buttons, and Inputs</option>
+		<option value="2">Dynamic DOM / Live Registrations</option>
+		<option value="3">Registering jQuery Events</option>
+	</select>
+</div>
+
+<div id="demoContainer">
+	<div id="demoPage1" class="demoPage">
+		<h3>Link and Button events</h3>
+		<a href="#demo1Link">Click this link</a> to trigger an event. <br/>
+		<button name="demo1Button">Click this button</button>
+		to trigger an event.
+
+		<h3>Receive Change events from inputs</h3>
+		<input name="demo1Input" type="text" size="100" value="Edit this text and press tab to trigger a change event"/>
+		<br/> <label> <input id="demo1Checkbox" name="demo1Input" type="checkbox"/> Check this box </label>
+
+		<h3>An anchor</h3>
+		<a href="#demo1Anchor">This link</a> has no handlers. The link will navigate normally.
+		<div style="height: 200px;"></div>
+		<a id="demo1Anchor"></a> #demo1Anchor will scroll down to here.
+		<div style="height: 1000px;"></div>
+	</div>
+
+	<div id="demoPage2" class="demoPage">
+		<button name="demo2Create">Create a link with jQuery</button>
+		<div id="demo2Content"></div>
+	</div>
+
+	<div id="demoPage3" class="demoPage">
+		<h3>Registering Class-based selectors</h3>
+		<div class="clickable" id="demo3Clickable">Elements with the class "clickable" were registered for click events<br />(click on this div)</div>
+
+		<h3>Registering and Unregistering</h3>
+		<button name="demo3Register">Register Mousemove</button>
+		<button name="demo3Unregister">Unregister Mousemove</button>
+		<br /><br />Move your mouse over this box after registering or unregistering for the event:
+		<div id="demo3" class="mouseTracking" style="width: 400px; height: 300px; background: #EEE; border: 1px solid #CCC; padding: 20px;"></div>
+	</div>
+</div>
+</body>
+</html>
