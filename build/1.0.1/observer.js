@@ -7,7 +7,7 @@
  * See readme for documentation and demo
  * https://github.com/levilansing/Observer/blob/master/README.md
  *
- * version 1.0.1
+ * version 1.0.0
  */
 
 (function($) {
