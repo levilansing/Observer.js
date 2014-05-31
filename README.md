@@ -1,6 +1,6 @@
 # Observer.js
 
-A simple and effective event observer plugin for jQuery.
+A simple and effective event observer plugin for jQuery. Implement the observer pattern in your javascript with a few lines of code.
 
 Usage:
 
